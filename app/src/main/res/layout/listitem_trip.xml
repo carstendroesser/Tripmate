@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="?android:attr/actionBarSize"
+                android:layout_height="?android:attr/actionBarSize"
+                android:padding="@dimen/padding_normal"
+                android:scaleType="fitXY"
+                android:src="@drawable/car"
+                android:tint="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/listitem_trip_textview_primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_normal"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <de.carstendroesser.obdtripmate.views.SquaredView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/calendar" />
+
+                    </de.carstendroesser.obdtripmate.views.SquaredView>
+
+                    <android.support.v4.widget.Space
+                        android:layout_width="4dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/listitem_trip_textview_secondary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.6"
+                        android:singleLine="true"
+                        android:text="17:11"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_small" />
+
+                    <android.support.v4.widget.Space
+                        android:layout_width="@dimen/padding_normal"
+                        android:layout_height="match_parent" />
+
+                    <de.carstendroesser.obdtripmate.views.SquaredView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/clock" />
+
+                    </de.carstendroesser.obdtripmate.views.SquaredView>
+
+                    <android.support.v4.widget.Space
+                        android:layout_width="4dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/listitem_trip_textview_third"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.6"
+                        android:singleLine="true"
+                        android:text="17:11"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_small" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/listitem_trip_imageview_options"
+                android:layout_width="?android:attr/actionBarSize"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:padding="@dimen/padding_normal"
+                android:scaleType="fitXY"
+                android:src="@drawable/dots" />
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp">
+
+                <ImageView
+                    android:id="@+id/listitem_trip_imageview_primary"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop" />
+
+                <android.support.v4.widget.Space
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/listitem_trip_imageview_secondary"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_round"
+                android:scaleType="fitXY"
+                android:src="@drawable/arrow_right"
+                android:tint="@color/colorPrimary" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

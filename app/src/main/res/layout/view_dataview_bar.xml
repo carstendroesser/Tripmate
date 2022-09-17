@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/barDataViewImageView"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:layout_gravity="center"
+        android:tint="@color/white" />
+
+    <android.support.v4.widget.Space
+        android:layout_width="@dimen/padding_small"
+        android:layout_height="@dimen/padding_small" />
+
+    <de.carstendroesser.obdtripmate.views.BarView
+        android:id="@+id/barDataViewBarView"
+        android:layout_width="8dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1" />
+
+    <android.support.v4.widget.Space
+        android:layout_width="@dimen/padding_small"
+        android:layout_height="@dimen/padding_small" />
+
+    <TextView
+        android:id="@+id/barDataViewTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_normal"
+        android:textStyle="bold" />
+
+</merge>
