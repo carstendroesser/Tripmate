@@ -14,4 +14,4 @@ Digital logbook for your vehicle. Connects to an adapter which needs to be plugg
 * Dashboard for visualizing live data
 * Works in background (even with display off)
 
-*(the amount of available OBD2 commands is limited and might not be complete)
+*(the amount of available OBD2 commands is limited and might not be complete)*
